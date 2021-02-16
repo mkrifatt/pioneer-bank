@@ -91,6 +91,9 @@
             var withdrawNumber = getInputNumber('withdrawAmount');
             updateSpanText("currentWithdraw",withdrawNumber);
             updateSpanText("currentBalance",-1*withdrawNumber);
+            
+            //to make input null by default
+            document.getElementById('depositAmount').value = "";
         })
 
 
